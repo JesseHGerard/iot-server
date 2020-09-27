@@ -1,0 +1,24 @@
+{
+  "name": "server",
+  "version": "0.0.1",
+  "description": "IOT server",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run compile && npm run build-dev-container",
+    "build-dev-container": "docker build --tag iot-server-dev .",
+    "compile": "npx --no-install tsc",
+    "dev": "npx --no-install nodemon ./dist/index.js",
+    "export-dev-container": "docker save -o ./dist/iot-server-dev.tar iot-server-dev:latest",
+    "watch": "npx --no-install tsc --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "apollo-server": "^2.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4",
+    "typescript": "^4.0.3"
+  }
+}

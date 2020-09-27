@@ -1,0 +1,2 @@
+2020/09/27 15:52:48 [13795] rsync error: received SIGINT, SIGTERM, or SIGHUP (code 20) at /AppleInternal/BuildRoot/Library/Caches/com.apple.xbs/Sources/rsync/rsync-54.120.1/rsync/rsync.c(244) [sender=2.6.9]
+2020/09/27 15:52:48 [13795] _exit_cleanup(code=20, file=/AppleInternal/BuildRoot/Library/Caches/com.apple.xbs/Sources/rsync/rsync-54.120.1/rsync/rsync.c, line=244): about to call exit(20)
